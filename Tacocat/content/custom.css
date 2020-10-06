@@ -1,0 +1,52 @@
+﻿.background-image {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/tacos-md.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: white;
+}
+
+p {
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+.content {
+    margin: 50px auto;
+}
+
+#tacocatResults {
+    font-size: 3rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.25rem;
+}
+
+.input-section {
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    /*border: solid 1px red;*/
+}
+
+input {
+    margin-top: 10px;
+    ;
+}
+
+button {
+    margin: 20px 5px;
+}
