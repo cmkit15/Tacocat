@@ -6,6 +6,7 @@ function reverse() {
 
     let errorMessage = "Your input cannot be blank!";
     if (userInput == "") {
+        document.getElementById('tacocatResults').innerHTML = "";
         document.getElementsByClassName('error-message')[0].innerHTML = errorMessage;
     } else {
         document.getElementsByClassName('error-message')[0].innerHTML = "";
