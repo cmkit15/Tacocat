@@ -8,8 +8,8 @@ function reverse() {
     if (userInput == "") {
         document.getElementsByClassName('error-message')[0].innerHTML = errorMessage;
     } else {
-        for (let loop = userInputLower.length - 1; loop >= 0; loop--) {
-            palindrome = palindrome += userInputLower.charAt(loop);
+        for (let i = userInputLower.length - 1; i >= 0; i--) {
+            palindrome = palindrome += userInputLower.charAt(i);
             if (palindrome == userInputLower) {
                 document.getElementById('tacocatResults').innerHTML = `${palindrome} <br /> is a palindrome`;
             } else {
