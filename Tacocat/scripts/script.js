@@ -12,7 +12,7 @@ function reverse() {
         document.getElementsByClassName('error-message')[0].innerHTML = "";
         for (let i = userInputLower.length - 1; i >= 0; i--) {
             palindrome = palindrome += userInputLower.charAt(i);
-            if (palindrome == userInputLower) {
+            if (palindrome == userInput) {
                 document.getElementById('tacocatResults').innerHTML = `${palindrome} <br /> is a palindrome`;
             } else {
                 document.getElementById('tacocatResults').innerHTML = `${palindrome} <br />Nope, do better next time!`;
