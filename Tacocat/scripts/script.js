@@ -8,6 +8,7 @@ function reverse() {
     if (userInput == "") {
         document.getElementsByClassName('error-message')[0].innerHTML = errorMessage;
     } else {
+        document.getElementsByClassName('error-message')[0].innerHTML = "";
         for (let i = userInputLower.length - 1; i >= 0; i--) {
             palindrome = palindrome += userInputLower.charAt(i);
             if (palindrome == userInputLower) {
