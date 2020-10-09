@@ -2,9 +2,6 @@
     background-color: ghostwhite;
     color: black;
 }
-.row {
-    /*border: solid 1px red;*/
-}
 
 .background-image {
     max-width: 100%;
@@ -41,10 +38,9 @@ p {
 
 .content {
     margin: 50px auto;
-    /*border: solid 1px red;*/
 }
 
-.results {
+.results-section {
     padding: 20px 0;
     justify-content: center;
 }
@@ -62,12 +58,10 @@ p {
     max-width: 500px;
     margin: 20px auto 0 auto;
     justify-content: center;
-    /*border: solid 1px red;*/
 }
 
 input {
     margin-top: 10px;
-    ;
 }
 
 button {
