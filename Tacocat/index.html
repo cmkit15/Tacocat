@@ -8,9 +8,10 @@
 
     <title>TacocaT</title>
 
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="content/custom.css"/>
+    <link rel="stylesheet" href="content/custom.css" />
     <script src='scripts/script.js'></script>
 
 </head>
@@ -18,7 +19,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav-bg static-top">
         <div class="container">
             <a class="navbar-brand" href="/index.html">TacocaT</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,23 +48,16 @@
         </div>
 
         <div class="row text-center">
-            <div class="col">
-                <p>Enter any word, number or even a phrase and see if it's a palindrome.</p>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col results">
-                <span id="tacocatResults"></span>
-                <span class="error-message"></span>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col input-section">
-                <input class="form-control" type="text" placeholder="Enter a word or a phrase" id="userInput">
-                <button class="btn btn-danger" onclick="reset()">Clear</button>
-                <button class="btn btn-primary" onclick="reverse()">Submit</button>
+            <div class="col site-info">
+                <p>
+                    Tacocat is a coding challenge based on the more traditional
+                   "Reverse a string" exercise and it determines if a word or a
+                   phrase reads the same backwards which is also referred to as
+                   a palindrome.
+                </p>
+                <p>
+                    <a class="btn btn-primary" type="button" href="solve.html">Solve</a>
+                </p>
             </div>
         </div>
     </div>

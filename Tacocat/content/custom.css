@@ -1,4 +1,8 @@
-﻿.row {
+﻿html, body {
+    background-color: ghostwhite;
+    color: black;
+}
+.row {
     /*border: solid 1px red;*/
 }
 
@@ -8,17 +12,26 @@
     align-items: center;
     justify-content: center;
     min-height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/tacos-md.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/tacos-md.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+}
+.custom-nav-bg {
+    background-color: black;
 }
 
 h1 {
     font-size: 5rem;
     font-weight: 300;
     color: white;
+}
+
+.site-info {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 p {

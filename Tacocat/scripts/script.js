@@ -27,3 +27,15 @@ function reset() {
     document.getElementById('userInput').value = "";
     document.getElementById('tacocatResults').innerHTML = "";
 }
+
+document.getElementById("userInput").addEventListener("keydown", function (evt) {
+
+    var character = (evt.which) ? evt.which : evt.keyCode;
+    if (character >= 97 && character <= 122 || character >= 65 && character <= 90 || character == 8) {
+        return true;
+
+    } else {
+        evt.preventDefault();
+        return false;
+    }
+});

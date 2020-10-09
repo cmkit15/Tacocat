@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="code.html" />
     <Content Include="content\custom.css" />
+    <Content Include="images\favicon.ico" />
     <Content Include="images\tacos-md.jpg" />
     <Content Include="index.html" />
     <Content Include="scripts\script.js" />
