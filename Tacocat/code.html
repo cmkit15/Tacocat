@@ -76,9 +76,39 @@
                     </div>
                     <div class="modal-body">
 <pre>
-                        <code class="language-javascript">
-    
-    </code>
+<code class="language-javascript">
+// Event listener for submit button
+document.getElementById('submit').addEventListener('click', reverseString);
+
+// Function to reverse user input
+function reverseString() {
+    let userInput = document.getElementById('userInput').value;
+    let userInputLower = userInput.toLowerCase();
+    let palindrome = "";
+    let errorMessage = "Your input cannot be blank!";
+    if (userInput == "") {
+        document.getElementById('tacocatResults').innerHTML = "";
+        document.getElementsByClassName('error-message')[0].innerHTML = errorMessage;
+    } else {
+        document.getElementsByClassName('error-message')[0].innerHTML = "";
+            for (let i = userInputLower.length - 1; i >= 0; i--) {
+            palindrome = palindrome += userInputLower.charAt(i);
+            if (palindrome == userInputLower) {
+                document.getElementById('tacocatResults').innerHTML = `${palindrome} <br /> is a palindrome`;
+            } else {
+                    document.getElementById('tacocatResults').innerHTML = `${palindrome} <br />Nope, do better next time!`;
+            }
+        }
+    }
+}
+
+// Function to clear user input
+function reset() {
+    document.getElementsByClassName('error-message')[0].innerHTML = "";
+    document.getElementById('userInput').value = "";
+    document.getElementById('tacocatResults').innerHTML = "";
+}
+</code>
 </pre>
                     </div>
                     <div class="modal-footer">
@@ -101,7 +131,77 @@
                     <div class="modal-body">
 <pre>
 <code class="language-css">
+html, body {
+background-color: ghostwhite;
+color: black;
+}
 
+.background-image {
+max-width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 400px;
+background:
+linear-gradient(rgba(0, 0, 0, .6),
+rgba(0, 0, 0, .6)), url(../images/tacos-md.jpg);
+background-color: black;
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: center center;
+background-size: cover;
+}
+.custom-nav-bg {
+background-color: black;
+}
+
+h1 {
+font-size: 5rem;
+font-weight: 300;
+color: white;
+}
+
+.site-info {
+max-width: 600px;
+margin: 0 auto;
+}
+
+p {
+padding-top: 50px;
+font-size: 1.5rem;
+}
+
+.content {
+margin: 50px auto;
+}
+
+.results-section {
+padding: 20px 0;
+justify-content: center;
+}
+
+#tacocatResults {
+font-size: 2rem;
+}
+
+.error-message {
+color: red;
+font-size: 1.25rem;
+}
+
+.input-section {
+max-width: 500px;
+margin: 20px auto 0 auto;
+justify-content: center;
+}
+
+input {
+margin-top: 10px;
+}
+
+button {
+margin: 20px 5px;
+}
 </code>
 </pre>
                     </div>
